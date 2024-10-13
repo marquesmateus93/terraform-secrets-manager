@@ -22,7 +22,7 @@ resource "aws_secretsmanager_secret_version" "secrets-manager-version" {
   ]
 }
 
-resource "random_password" "-random-password" {
+resource "random_password" "random-password" {
   length      = local.random-password.length
   special     = local.random-password.special
   numeric     = local.random-password.numeric
